@@ -1,0 +1,118 @@
+* {
+        margin:0;
+        padding:0;
+} 
+
+html {
+        height: 100%;
+}
+
+body {
+        padding-left: 15%;
+        max-width: 800px;
+        height: 100%;
+}
+
+.wrap { 
+        min-height: 100%;
+}
+
+.header {
+        line-height: 5em;
+        padding-top: 20px;
+        -webkit-text-size-adjust: 60%;
+}
+
+.header .noimage {
+        padding-top: 20px;
+        display: none;
+}
+
+p {
+        padding-top: 0.5em;
+}
+
+.content {
+        -webkit-text-size-adjust: 90%;
+        padding-top: 40px;
+        padding-right: 20px;
+        font-size:calc(12px + 0.8vw);
+        font-weight: lighter;
+        font-family: Helvetica, Arial, Sans-Serif;
+        overflow:auto;
+	padding-bottom: 40px;
+}
+
+.footer {
+        -webkit-text-size-adjust: 80%;
+        position: relative;
+        padding-right: 50px;
+	margin-top: -40px; 
+	height: 40px;
+	clear:both;
+        font-size:calc(12px + 0.25vw);
+        line-height: 1.1em;
+        font-weight: lighter;
+        font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.switcher {
+        position: relative;
+	margin-top: -30px; 
+        float: right;
+	height: 40px;
+	clear:both;
+        width: 50px;
+}
+
+.steadyeddie {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+.funktown {
+        width: 20px;
+        height: 20px;
+        background-color: #5BCAFE;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+img { 
+        padding-right: 30px;
+}
+
+h1 {
+        font-weight: lighter;
+        font-family: Helvetica;
+        font-size: 3.5em;
+}
+
+.nohighlight {
+        background-color: #FFFFFF;        
+}
+.nohighlight:hover {
+        background-color: #FFFFFF;        
+}
+.nohighlight:active {
+        background-color: #FFFFFF;        
+}
+
+a {
+        color: black;
+        background-color: #E0E0E0;
+        text-decoration: none;
+}
+
+a:hover {
+        background-color: #CCCCCC;
+}
+
+a:active {
+        background-color: #004D40;
+}
+
+
