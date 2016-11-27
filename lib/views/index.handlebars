@@ -7,20 +7,47 @@
 	</script>
 
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Arima+Madurai:300|Asul|Comfortaa:300|EB+Garamond|Overlock+SC|PT+Sans+Caption|Prompt" rel="stylesheet">
-	<link href="/public/css/styles.css" rel="stylesheet">
+	<link href="" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Bungee|Bungee+Shade" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" title="steady" href="/public/css/steadyeddie.css">
+	<link rel="alternate stylesheet" type="text/css" title="funk" href="/public/css/funktown.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-	
-	<div class="header">
-		{{{header}}}
-	</div>
-	<div class="content">
-		{{{content}}}
-	</div>
+	<div class="wrap">
+		<div class="header">
+			{{{header}}}
+		</div>
+
+		<div class="content">
+			{{{content}}}
+		</div>
+	</div>	
 	<div class="footer">
 		{{{footer}}}
 	</div>
-
+	<div class="switcher">
+		<div class="steadyeddie" type="submit" onclick="switchStyles('steady');return false;" name="theme" id="steady"></div>
+		<div class="funktown" type="submit" onclick="switchStyles('funk');return false;" name="theme" id="funk"></div>
+	</div>
 </body>
+
+<script>
+
+
+function switchStyles ( cssTitle )
+{
+  var i, link_tag ;
+  for (i = 0, linkTag = document.getElementsByTagName("link"); i < linkTag.length ; i++ ) {
+    if ((linkTag[i].rel.indexOf( "stylesheet" ) != -1) && linkTag[i].title) {
+      linkTag[i].disabled = true ;
+      if (linkTag[i].title == cssTitle) {
+        linkTag[i].disabled = false ;
+      }
+    }
+  }
+}
+
+</script>
 </html>
