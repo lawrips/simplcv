@@ -1,0 +1,9 @@
+{
+    "name": "SimplCV",
+    "description": "A barebones SimplCV site",
+    "repository": "https://github.com/lawrips/simplcv/tree/add-to-heroku",
+    "keywords": ["node", "simplcv", "resume", "cv"],
+    "scripts": {
+        "postdeploy": "npm run heroku_copy"
+    }
+}
