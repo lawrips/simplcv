@@ -1,0 +1,146 @@
+* {
+        margin:0;
+        padding:0;
+} 
+
+html {
+        height: 100%;
+}
+
+body {
+    background: linear-gradient( 45deg, #55EFCB, 60%, #5BCAFE );
+    color: #333333;
+    max-width: 1024px;
+    margin-left: 10vw;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+.nohighlight {
+    display: none;
+}
+
+.wrap { 
+    min-height: 100%;
+}
+
+.header {
+    padding: 2vw 0;
+    font-size: 2vw;
+}
+
+.header a {
+    margin-right: 1vw;
+    padding: 0.5vw 1vw;
+    text-transform: uppercase;
+    color: #444;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+
+.header a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+    -webkit-text-size-adjust: 90%;
+    padding-top: 40px;
+    font-size:calc(12px + 1vw);
+    overflow:auto;
+	padding-bottom: 40px;
+}
+
+.footer {
+    -webkit-text-size-adjust: 80%;
+    font-size:calc(12px + 0.25vw);
+    font-weight: lighter;
+    font-family: Helvetica, Arial, Sans-Serif;
+    position: relative;
+    padding-right: 50px;
+	margin-top: -40px; 
+	height: 40px;
+	clear:both;
+}
+
+.switcher {
+    position: relative;
+	margin-top: -30px; 
+    float: right;
+	height: 40px;
+	clear:both;
+    width: 50px;
+}
+
+
+h1 {
+    font-family: 'Bungee Shade', Helvetica, sans-serif;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    margin: 0;
+    padding: 0px 30px;
+    font-size: 5vw;
+    min-font-size: 20px;
+    max-font-size: 70px;
+}
+
+h2 {
+    font-family: 'Bungee';
+    font-size: 30px;
+    padding: 0px 0px;
+    margin: -20px 0;
+    font-weight: normal;
+}
+
+.contnet p {
+    z-index: 100;
+}
+
+.content a {
+    color: white;
+    background: rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    padding: 0.01vw 0.6vw;
+    z-index: 1;
+}
+
+.cotent a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+p {
+        padding-top: 0.5em;
+}
+
+.steadyeddie {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+.funktown {
+        width: 20px;
+        height: 20px;
+        background-color: #5BCAFE;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 5vw;
+    }
+
+    nav a {
+        display:  inline-block;
+        font-size: 5vw;
+        margin-top: 1vh;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+}
