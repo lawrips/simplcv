@@ -13,7 +13,7 @@ It's very early and lots to do, but you can get up and running with a bit of eff
 
 Alternatively you can also run this using the included Dockerfile, or:
 
-[<img src="https://www.herokucdn.com/deploy/button.svg">](https://heroku.com/deploy?template=https://github.com/lawrips/simplcv/tree/add-to-heroku)
+[<img src="https://www.herokucdn.com/deploy/button.svg">](https://heroku.com/deploy?template=https://github.com/lawrips/simplcv/tree/master)
 
 ## Next steps
 
