@@ -10,7 +10,7 @@ var port = process.env['PORT'] || 4004;
 
 var app = express()
 
-app.engine('handlebars', exphbs({defaultLayout: path.join(__dirname, 'lib/views/layouts/main')}));
+app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'lib/views'));
 
@@ -21,6 +21,7 @@ app.get('/', function (req, res) {
       content: marked(fs.readFileSync('content/content.md', 'utf8')),
       header: marked(fs.readFileSync('content/header.md', 'utf8')),
       footer: marked(fs.readFileSync('content/footer.md', 'utf8')),
+      title: process.env['title']
     })
 })
 

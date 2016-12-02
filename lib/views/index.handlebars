@@ -1,27 +1,31 @@
 
 <html>
 <head>
-	<title>Lawrence Ripsher</title>
-	<script>
-
-	</script>
+	<meta charset="utf-8">
+	<meta property="og:title" content={{{title}}} />
+    <meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+	<title>SimplCV</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Arima+Madurai:300|Asul|Comfortaa:300|EB+Garamond|Overlock+SC|PT+Sans+Caption|Prompt" rel="stylesheet">
 	<link href="" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Bungee|Bungee+Shade" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" title="steady" href="/public/css/steadyeddie.css">
 	<link rel="alternate stylesheet" type="text/css" title="funk" href="/public/css/funktown.css">
+	<link rel="alternate stylesheet" type="text/css" title="square" href="/public/css/quitesquare.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 	<div class="wrap">
 		<div class="header">
+			<div class="title">{{{title}}}</div>
 			{{{header}}}
 		</div>
 
 		<div class="content">
-			{{{content}}}
+			<div class="title">{{{title}}}</div>
+				{{{content}}}
+			</div>
 		</div>
 	</div>	
 	<div class="footer">
@@ -30,6 +34,7 @@
 	<div class="switcher">
 		<div class="steadyeddie" type="submit" onclick="switchStyles('steady');return false;" name="theme" id="steady"></div>
 		<div class="funktown" type="submit" onclick="switchStyles('funk');return false;" name="theme" id="funk"></div>
+		<div class="quitesquare" type="submit" onclick="switchStyles('square');return false;" name="theme" id="square"></div>
 	</div>
 </body>
 

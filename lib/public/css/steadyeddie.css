@@ -17,9 +17,12 @@ body {
         min-height: 100%;
 }
 
-.header {
-        line-height: 5em;
+.header .title {
+        font-weight: lighter;
+        font-family: Helvetica;
+        font-size:calc(12px + 3.5vw);
         padding-top: 20px;
+        line-height: 6vw;
         -webkit-text-size-adjust: 60%;
 }
 
@@ -43,14 +46,18 @@ p {
 	padding-bottom: 40px;
 }
 
+.content .title {
+        display: none;
+}
+
 .footer {
         -webkit-text-size-adjust: 80%;
         position: relative;
-        padding-right: 50px;
+        padding-right: 80px;
 	margin-top: -40px; 
 	height: 40px;
-	clear:both;
-        font-size:calc(12px + 0.25vw);
+	clear:both;     
+        font-size:calc(12px + 0.05vw);
         line-height: 1.1em;
         font-weight: lighter;
         font-family: Helvetica, Arial, Sans-Serif;
@@ -62,7 +69,7 @@ p {
         float: right;
 	height: 40px;
 	clear:both;
-        width: 50px;
+        width: 80px;
 }
 
 .steadyeddie {
@@ -81,14 +88,16 @@ p {
         display: inline-block;
 }
 
-img { 
-        padding-right: 30px;
+.quitesquare {
+        width: 20px;
+        height: 20px;
+        background-color: #444;
+        border:1px solid #888888;
+        display: inline-block;
 }
 
-h1 {
-        font-weight: lighter;
-        font-family: Helvetica;
-        font-size: 3.5em;
+img { 
+        padding-right: 30px;
 }
 
 .nohighlight {

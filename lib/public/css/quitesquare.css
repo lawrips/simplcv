@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+        margin:0;
+        padding:0;
+} 
+
+html {
+        height: 100%;
+}
+
+
+body {
+    background-color:#9E9E9E;
+    background-repeat:repeat;
+    padding:0px !important;
+    height:100%;
+    width: 60%;
+    margin: auto;
+}
+
+.header .title {
+    display: none;
+}
+
+.content .title {
+    font-family: 'Helvetica', cursive;
+    font-weight: 100;
+    color:#424242;
+    width: 100%;
+    font-size:calc(20px + 1.6vw);
+    text-transform:uppercase;
+    line-height:8vw;
+    border-top: 2px solid #424242;
+    border-bottom: 2px solid #424242;
+}
+
+.wrap {
+    min-height: 98%;
+	width:100%;
+    box-shadow:0 0 8px #333;
+    border-radius: 10px 10px 10px 10px;
+    background-color:#FFF;
+}
+
+.nohighlight {
+    display: none;
+}
+
+.header {
+	width:100% + 10px;
+	height:auto;
+    font-weight: lighter;
+	background-color:#424242;
+	box-shadow:0 0 3px #000000;
+	border-radius:5px 5px 0px 0px;
+    padding-top:5px;
+    padding-bottom:15px;
+    text-align: center;
+}
+
+.header a {
+    font-family: 'Helvetica';
+    color:#FFF;
+    font-size:calc(12px + 0.6vw);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left:25px;
+    padding-right:25px;
+	background-color:#424242;
+}
+
+.header a:hover {
+	background-color:#616161;	
+}
+	
+
+a {
+    color: black;
+    background-color: #E0E0E0;
+    text-decoration: none;
+}
+
+a:hover {
+        background-color: #CCCCCC;
+}
+
+a:active {
+        background-color: #004D40;
+}
+
+.content {
+    -webkit-text-size-adjust: 90%;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 10%;
+    font-size:calc(12px + 0.6vw);
+    font-weight: lighter;
+    font-family: Helvetica, Arial, Sans-Serif;
+    overflow:auto;
+	padding-bottom: 40px;
+	width:80%;
+    color:#333;
+}
+
+.footer {
+    -webkit-text-size-adjust: 80%;
+    position: relative;
+    padding-right: 80px;
+	margin-top: -40px; 
+	height: 40px;
+	clear:both;
+    font-size:calc(12px + 0.05vw);
+    line-height: 1.1em;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-align: center;
+}
+
+.switcher {
+    position: relative;
+	margin-top: -30px; 
+    float: right;
+	height: 40px;
+	clear:both;
+    width: 80px;
+}
+
+.steadyeddie {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+.funktown {
+        width: 20px;
+        height: 20px;
+        background-color: #5BCAFE;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+.quitesquare {
+        width: 20px;
+        height: 20px;
+        background-color: #444;
+        border:1px solid #888888;
+        display: inline-block;
+}
+
+
+.link {	
+    font-family: 'Helvetica', sans-serif;
+    font-weight:700;
+    color:#012432;
+    font-size:18px;
+    text-decoration:underline;
+}
+
+p {
+    padding-top: 0.8em;
+    
+}
