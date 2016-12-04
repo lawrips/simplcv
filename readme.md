@@ -25,3 +25,4 @@ A few todos:
 - Create more templates
 - Error handling
 - One click install to Digital Ocean, Heroku, etc
+- Editable UI
