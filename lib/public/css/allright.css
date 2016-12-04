@@ -1,0 +1,149 @@
+* {
+    margin:0;
+    padding:0;
+} 
+
+html {
+        height: 100%;
+}
+
+body {
+    padding-left: 15%;
+    height: 100%;
+}
+
+.wrap { 
+    min-height: 100%;
+    width: 100%;
+    background: white;
+}
+
+.header { 
+    background: #00ACC1;
+    height: 100%;
+}
+
+.header .title {
+    color: white;
+    font-weight: lighter;
+    font-family: Helvetica;
+    font-size:calc(12px + 2vw);
+    -webkit-text-size-adjust: 60%;
+    background: #35879A;
+    padding-left: 20px;
+    padding-top: 50px;
+    height: 20%;
+}
+
+.header .noimage {
+    text-transform:uppercase;
+    color: white;
+    font-weight: lighter;
+    font-family: Helvetica;
+    font-size:calc(12px + 0.5vw);
+    padding-left: 30px;
+    padding-top: 40px;
+    -webkit-text-size-adjust: 60%;
+    background: #00ACC1;
+    display: block;
+}
+
+.header .nohighlight{
+    display: none;
+}
+
+
+.left-container {
+    width: 70%;
+    float: left;
+}
+
+.right-container {
+    width: 29%;
+    float: right;
+}
+.content {
+    -webkit-text-size-adjust: 90%;
+    white-space: pre-wrap;
+    color: #555;
+    padding-top: 50px;
+    padding-right: 40px;
+    font-size:calc(12px + 1.1vw);
+    font-weight: lighter;
+    font-family: Helvetica, Arial, Sans-Serif;
+    overflow:auto;
+    padding-bottom: 50px;
+}
+
+.content .title {
+    display: none;
+}
+
+.footer {
+    -webkit-text-size-adjust: 80%;
+    position: relative;
+    padding-right: 80px;
+	margin-top: -40px; 
+	height: 40px;
+	clear:both;     
+    font-size:calc(12px + 0.05vw);
+    line-height: 1.1em;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, Sans-Serif;
+    max-width: 50%;
+    display: inline-block;
+}
+
+.switcher {
+    display: inline-block;    
+}
+
+.steadyeddie {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border:1px solid #888888;
+    display: inline-block;
+}
+
+.funktown {
+    width: 20px;
+    height: 20px;
+    background-color: #5BCAFE;
+    border:1px solid #888888;
+    display: inline-block;
+}
+
+.quitesquare {
+    width: 20px;
+    height: 20px;
+    background-color: #444;
+    border:1px solid #888888;
+    display: inline-block;
+}
+
+.allright {
+    width: 20px;
+    height: 20px;
+    background-color: #35879A;
+    border:1px solid #888888;
+    display: inline-block;  
+}
+
+img { 
+    padding-right: 30px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+a {
+    color: #35879A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #006064;
+}
+
+
+
