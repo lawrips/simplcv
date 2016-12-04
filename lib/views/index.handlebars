@@ -58,7 +58,6 @@ if (editMode == 'true') {
 
 	button.addEventListener('click', function(event) {
 		var content = $('.main').text();
-		console.log(content);
 		$.ajax({
 			url: '/save',
 			data: JSON.stringify({content: content}),
