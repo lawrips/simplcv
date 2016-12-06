@@ -50,7 +50,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.content {
+.main {
     -webkit-text-size-adjust: 90%;
     white-space: pre-wrap;
     padding-top: 40px;
@@ -92,11 +92,11 @@ h2 {
     font-weight: normal;
 }
 
-.contnet p {
+.main p {
     z-index: 100;
 }
 
-.content a {
+.main a {
     color: white;
     background: rgba(0, 0, 0, 0.15);
     text-decoration: none;
@@ -104,7 +104,7 @@ h2 {
     z-index: 1;
 }
 
-.cotent a:hover {
+.main a:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
