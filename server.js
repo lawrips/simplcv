@@ -21,20 +21,20 @@ app.use(bodyParser.json())
 app.get('/', function (req, res) {
   return res.render('index', {
       content: req.query.edit == 'true' ? fs.readFileSync('content/content.md', 'utf8') : marked(fs.readFileSync('content/content.md', 'utf8')),
-      header: marked(fs.readFileSync('content/header.md', 'utf8')),
+      header: req.query.edit == 'true' ? fs.readFileSync('content/links.md', 'utf8') : marked(fs.readFileSync('content/links.md', 'utf8')),
       footer: marked(fs.readFileSync('content/footer.md', 'utf8')),
-      title: process.env['title'],
+      title: fs.readFileSync('content/title.md', 'utf8'),
       editMode: req.query.edit
     })
 })
 
-app.post('/save', function (req, res) {
+app.post('/save/:type', function (req, res) {
     if (req.body.content) {
       
       // remove leading quotes and whitespace
       let content = req.body.content.replace(/(^\s*"|"\s*$)/g, '');
 
-      fs.writeFileSync('content/content.md', content);
+      fs.writeFileSync('content/'+ req.params.type + '.md', content);
       return res.status(201).send({result: 'ok'});
     }
     else {
