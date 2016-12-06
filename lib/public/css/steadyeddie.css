@@ -17,6 +17,57 @@ body {
         min-height: 100%;
 }
 
+.editButton {
+        float: right;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 24px;
+        height: 32px;
+        font-size: 16px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url('/public/img/save.png');
+        background-repeat: no-repeat;
+        background-size: 24px;
+        display: none;
+}
+
+.btn {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    width: 32px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    vertical-align: top;
+}
+
+
+.title .btn, .links .btn, .content .btn {
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    right: 24px;
+    top: 0px;
+}
+
+.title:hover .btn, .links:hover .btn, .content:hover .btn {
+    opacity: 1;
+}
+.header {
+        padding-bottom: 40px;        
+}
+
 .header .title {
         font-weight: lighter;
         font-family: Helvetica;
@@ -24,26 +75,66 @@ body {
         padding-top: 20px;
         line-height: 6vw;
         -webkit-text-size-adjust: 60%;
+        padding-bottom: 10px;
+        position: relative;
 }
 
-.header .noimage {
-        padding-top: 20px;
-        display: none;
+.links { 
+        position: relative;
+}
+
+.icons {
+        background-repeat: no-repeat;
+        background-size: 32px;
+        padding-bottom: 50px;
+        color: transparent;
+        padding-left: 10px;
+}
+
+.linkedin {
+        background-image: url('/public/img/linkedin.png');
+}
+
+.email {
+        background-image: url('/public/img/email.png');
+}
+
+.github {
+        background-image: url('/public/img/github.png');
+}
+
+.medium {
+        background-image: url('/public/img/medium.png');
+}
+
+.resume {
+        background-image: url('/public/img/resume.png');
+}
+
+.photos {
+        background-image: url('/public/img/photos.png');
+}
+
+.header img:hover {
+        background-color: #FFFFFF;        
+}
+.header img:active {
+        background-color: #FFFFFF;        
 }
 
 .content {
+        position: relative;
         white-space: pre-wrap;
         -webkit-text-size-adjust: 90%;
-        padding-top: 40px;
         padding-right: 20px;
         font-size:calc(12px + 0.8vw);
         font-weight: lighter;
         font-family: Helvetica, Arial, Sans-Serif;
-        overflow:auto;
+        overflow: hidden;
 	padding-bottom: 40px;
 }
 
-.content .title {
+.embeddedTitle {
         display: none;
 }
 
@@ -101,31 +192,17 @@ body {
     display: inline-block;  
 }
 
-img { 
-        padding-right: 30px;
-}
-
-.nohighlight {
-        background-color: #FFFFFF;        
-}
-.nohighlight:hover {
-        background-color: #FFFFFF;        
-}
-.nohighlight:active {
-        background-color: #FFFFFF;        
-}
-
-a {
+.content a {
         color: black;
         background-color: #E0E0E0;
         text-decoration: none;
 }
 
-a:hover {
+.content a:hover {
         background-color: #CCCCCC;
 }
 
-a:active {
+.content a:active {
         background-color: #004D40;
 }
 
