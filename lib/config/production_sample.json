@@ -1,0 +1,16 @@
+{	
+	"redis": {
+		"port": 6379,
+		"host": "localhost",
+		"db": 0
+	},
+	"users":[
+		{
+			"username":"testuser",
+			"domain":"localhost",
+			"password":"abcdefg"		
+		}				
+	]
+}
+
+
