@@ -1,6 +1,6 @@
 {
   "name": "simplcv",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -9,9 +9,13 @@
   "author": "Lawrence Ripsher",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.1.4",
     "body-parser": "^1.15.2",
+    "debug": "^2.3.3",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "marked": "^0.3.6"
+    "ioredis": "^2.4.2",
+    "marked": "^0.3.6",
+    "nconf": "^0.8.4"
   }
 }
