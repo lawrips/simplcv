@@ -1,8 +1,8 @@
 ![SimplCV](./lib/public/img/logo_320.png)
 
-# Simple, beautiful bios in under 100 words
+# Simple, beautiful bios in ~100 words
 
-An early stage project to make it easy to create a simple but beautiful bios with minimal use of rich content. Text shines here.
+An early stage project to make it easy to create a simple but beautiful bios with a clean minimalist design. Text shines here.
 
 ## New in v0.2.0
 - Support for Redis as a back end content store
