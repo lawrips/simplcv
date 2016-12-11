@@ -1,1 +1,1 @@
-This is the page footer. Feel free to remove it, or change to "Powered by [SimplCV](https://github.com/lawrips/simplcv)
+Powered by [SimplCV](https://github.com/lawrips/simplcv)
