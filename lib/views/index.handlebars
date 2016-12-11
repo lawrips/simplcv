@@ -15,73 +15,99 @@
 	<link rel="alternate stylesheet" type="text/css" title="right" href="/public/css/allright.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
 </head>
+
 <body>
-	<div class="wrap">
+<div class="wrap">
 		<div class="right-container">
 			<div class="header">
-				<div class="title">{{{title}}}</div>
-				{{{header}}}
+				<div class="titleContainer"><div class="title">{{{title}}}</div></div>
+				<div class="linksContainer"><div class="links">{{{links}}}</div></div>
 			</div>
 		</div>
 		<div class="left-container">
-			<div class="content"><div class="title">{{{title}}}</div><div class="main">{{{content}}}</div></div>
+			<div class="main"><div class="embeddedTitle">{{{title}}}</div><div class="content">{{{content}}}</div></div>
 		</div>
 	</div>
-
-	<div id="editMode"></div>
-
+	
 	<div class="footer">
 		{{{footer}}}
 	</div>
 
+	{{#if homepage}}
 	<div class="switcher">
 		<div class="steadyeddie" type="submit" onclick="switchStyles('steady');return false;" name="theme" id="steady"></div>
 		<div class="funktown" type="submit" onclick="switchStyles('funk');return false;" name="theme" id="funk"></div>
 		<div class="quitesquare" type="submit" onclick="switchStyles('square');return false;" name="theme" id="square"></div>
 		<div class="allright" type="submit" onclick="switchStyles('right');return false;" name="theme" id="right"></div>
 	</div>
+	{{/if}}
 </body>
 
 <script>
-	var editMode = "{{editMode}}";
 
-if (editMode == 'true') {
+var editMode = "{{editMode}}";
+
+$('.header a').each(function (item) {	
+	this.className = 'icons ' + this.text.toLowerCase();
+});
+
+
+if (editMode) {
+	$('.titleContainer').append('<button id="titleButton" class="btn"><img width="24" src="/public/img/save.png"></button>');
+	$('.linksContainer').append('<button id="linksButton" class="btn"><img width="24" src="/public/img/save.png"></button>');
+	$('.main').append('<button id="contentButton" class="btn"><img width="24" src="/public/img/save.png"></button>');
+	$('.footer').append('<button id="footerButton" class="btn"><img width="24" src="/public/img/save.png"></button>');
+
+	document.getElementsByClassName('title')[0].setAttribute('contentEditable','true');
+	document.getElementsByClassName('links')[0].setAttribute('contentEditable','true');
 	document.getElementsByClassName('content')[0].setAttribute('contentEditable','true');
+	document.getElementsByClassName('footer')[0].setAttribute('contentEditable','true');
 
-	var button = document.createElement("BUTTON");
-	button.style.width="100px";
-	button.style.height="30px";
-	button.style['font-size']="16px";
-	var t = document.createTextNode("SAVE");  
+	var contentButton = document.getElementById("contentButton");
+	var linksButton = document.getElementById("linksButton");
+	var titleButton = document.getElementById("titleButton");
+	var footerButton = document.getElementById("footerButton");
 
-	button.addEventListener('click', function(event) {
-		var content = $('.main').text();
-		$.ajax({
-			url: '/save',
-			data: JSON.stringify({content: content}),
-			contentType: 'application/json; charset=utf-8',
-			dataType: 'json',
-			method: 'POST'
-		})
-		.done(function(data){
-			console.log(data);
-		}).fail(function(error) {
-			console.log(error);
-		});
+	contentButton.addEventListener('click', function(event) {
+		save ('content');
 	});
 	
-	button.appendChild(t); 
-
+	linksButton.addEventListener('click', function(event) {
+		save ('links');
+	});
+	
+	titleButton.addEventListener('click', function(event) {
+		save ('title');
+	});
+	
+	footerButton.addEventListener('click', function(event) {
+		save ('footer');
+	});
+	
 	var element = document.getElementById("editMode");
-	element.appendChild(button);
 
-	document.getElementsByClassName("footer")[0].style.display = "none";
-	document.getElementsByClassName("switcher")[0].style.display = "none";
-
+	//document.getElementsByClassName("footer")[0].style.display = "none";
+	//document.getElementsByClassName("switcher")[0].style.display = "none";
 }
 
+
+function save (target) {
+	var content = $('.' + target)[0].innerText;
+	console.log(content);
+	$.ajax({
+		url: '/user/{{user}}/' + target,
+		data: JSON.stringify({content: content}),
+		contentType: 'application/json; charset=utf-8',
+		dataType: 'json',
+		method: 'POST'
+	})
+	.done(function(data){
+		console.log(data);
+	}).fail(function(error) {
+		console.log(error);
+	});		
+}
 
 function switchStyles ( cssTitle )
 {

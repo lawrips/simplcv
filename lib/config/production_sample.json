@@ -1,0 +1,11 @@
+{	
+	"users":[
+		{
+			"username":"testuser",
+			"domain":"localhost",
+			"password":"abcdefg"		
+		}				
+	]
+}
+
+

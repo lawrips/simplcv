@@ -24,12 +24,12 @@ body {
     display: none;
 }
 
-.content .main {
+.main .content {
     padding-top: 40px;
     
 }
 
-.content .title {
+.embeddedTitle {
     font-family: 'Helvetica', cursive;
     font-weight: 100;
     color:#424242;
@@ -95,7 +95,7 @@ a:active {
         background-color: #004D40;
 }
 
-.content {
+.main {
     -webkit-text-size-adjust: 90%;
     white-space: pre-wrap;
     padding-top: 40px;

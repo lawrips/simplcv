@@ -1,1 +1,1 @@
-Edit three files: header.md, content.md and footer.md. When you're done, copy to the /content directory.
+Powered by [SimplCV](https://github.com/lawrips/simplcv)

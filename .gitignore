@@ -2,4 +2,7 @@ node_modules
 .vscode
 *.pdf
 my_content
+my_config
 .DS_Store
+lib/config/production.json
+run.sh
